@@ -13,28 +13,28 @@ const port=process.env.PORT;
 
 const mentor=[{
 "id":1,
-"mentor_name":"vivek",
+"mentor_name":"kayal",
 "skill":"react.js"
 },
 {
   "id":2,
-  "mentor_name":"balaji",
+  "mentor_name":"elamathi",
   "skill":"angular.js"
 },
 {
 "id":3,
-"mentor_name":"gopal",
+"mentor_name":"gokul",
 "skill":"vue.js"  
 }];
 
 const student=[{
   "id":101,
-"student_name":"sankar",
-"student_email":"vivek@gmail.com",
+"student_name":"ashwin",
+"student_email":"ashwin@gmail.com",
 "mentor_id":"1"
 },{"id":102,
 "student_name":"surya",
-"student_email":"vivek@gmail.com",
+"student_email":"surya@gmail.com",
 "mentor_id":""
 }];
 
@@ -54,7 +54,7 @@ export const client=await createConnection();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!!!!😊😊😊🔥🔥🔥🔥')
+  res.send('Hello World!!!!😊😊😊🔥🔥🔥')
 });
 
 app.use("/mentors",mentors);
